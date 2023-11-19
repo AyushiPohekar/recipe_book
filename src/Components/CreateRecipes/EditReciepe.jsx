@@ -29,7 +29,7 @@ const EditRecipe = () => {
     const fetchRecipe = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/v1/recipe/getreciepeByid/${recipeId}`
+          `${API}/recipe/getreciepeByid/${recipeId}`
         );
 
         const existingRecipe = response.data
