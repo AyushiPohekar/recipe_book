@@ -1,0 +1,17 @@
+.NavbarContainer {
+  background-color: #ff6c22;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: larger;
+  div {
+    width: max-content;
+  }
+  div:hover{
+     color: black;
+  }
+}

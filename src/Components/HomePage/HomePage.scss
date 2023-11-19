@@ -1,0 +1,40 @@
+.HomePageContainer {
+  background-color: #ff6c22;
+  .TitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    color: #ffffff;
+  }
+
+  .imgContainer {
+    height: 70vh;
+    .reciepeCoverpic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .FooterContainer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    button{
+      padding: 0.8rem 0.7rem;
+      border: none;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+      font-weight: 500;
+      font-size: larger;
+      cursor: pointer;
+      &:hover{
+       color: #ff6c22;
+      }
+    }
+    
+  }
+}

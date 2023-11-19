@@ -1,1 +1,1 @@
-export const API="https://localhost:5000"
+export const API="https://reciepebook.onrender.com/api/v1"

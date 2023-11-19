@@ -17,7 +17,7 @@ const Login = () => {
         console.log(email, password);
     
         try {
-          const res = await axios.post(`${API}/api/v1/auth/login`, {
+          const res = await axios.post(`${API}/auth/login`, {
             email,
             password,
           });
@@ -49,7 +49,7 @@ const Login = () => {
     <form style={{ width: "30%" }} onSubmit={handleSubmit}>
       <div className="mainDiv">
         <label htmlFor="exampleInputEmail1" className="form-label">
-          Email address
+          Email address:
         </label>
         <input
           type="email"
@@ -62,9 +62,9 @@ const Login = () => {
           required
         />
       </div>
-      <div className="mb-3">
+      <div className="mainDiv">
         <label htmlFor="exampleInputPassword1" className="form-label">
-          Password
+          Password:
         </label>
         <input
           type="password"
@@ -78,7 +78,7 @@ const Login = () => {
         />
       </div>
 
-      <div className="mb-3">
+    
         <button
           type="button"
           className="btn forgot-btn"
@@ -88,9 +88,8 @@ const Login = () => {
         >
           Forgot Password
         </button>
-      </div>
-
-      <button type="submit" className="btn btn-primary Registerbtn">
+     
+      <button type="submit" className="btn Registerbtn">
         Login
       </button>
     </form>
